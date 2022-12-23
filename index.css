@@ -1,0 +1,87 @@
+/*----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+:root{
+    --theme-color: rgb(204, 31, 132);
+    --primary-color: rgb(34, 31, 31);
+    --secondary-color:rgb(144, 138, 138);
+    --bg-color:rgb(240, 240, 240);
+}
+
+/*-----------common container-----------*/
+.common-container{
+    margin: auto;
+    width: 75%;
+}
+
+/*----------header css start------------*/
+header{
+    background: var(--bg-color);
+    box-shadow: 0 1px 5px var(--secondary-color);
+}
+header .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+header .row .left{
+    text-align: left;
+    flex-basis: 600px;
+    min-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+}
+header .row .left >div{
+    flex-basis: 270px;
+}
+header .row .left >div p{
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+header .row .left >div i{
+    font-size: 17px;
+    color: var(--theme-color);
+    margin: 5px auto;
+}
+header .row .right{
+    flex-basis: 350px;
+    min-width: 350px;
+    border: 1px solid rgb(204, 31, 132);
+}
+header .row .right .social-icons{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+header .row .right .social-icons a{
+    margin-right: 15px;
+}
+header .row .right .social-icons a i{
+    display: inline-block;
+    background: var(---color);
+    color: var(--theme-color);
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+    transition: all 0.4s ease-in-out; 
+}
+header .row .right .social-icons a:hover i{
+    background: var(--theme-color);
+    color: var(--bg-color);
+    transform: scale(1.05) translateY(-3px);
+}
