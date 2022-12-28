@@ -19,12 +19,13 @@ p {
   margin-bottom: 0;
 }
 .section-head {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .main-title-styling {
   display: inline-block;
   font-size: 30px;
   font-weight: 500;
+  margin-bottom: 20px;
   color: var(--primary-color);
   padding-bottom: 10px;
   border-bottom: 3px solid var(--theme-color);
@@ -40,6 +41,7 @@ img {
 
 /*----------header css start------------*/
 header {
+  width: 100%;
   background: var(--bg-color);
   box-shadow: 0 1px 4px var(--secondary-color);
   margin-bottom: 3px;
@@ -110,19 +112,32 @@ header .row .right {
 /*----------navbar css start------------*/
 .navigation-bar {
   z-index: 99;
+  width: 100%;
   background: var(--bg-color);
   position: sticky;
   top: 43px;
 }
 .navigation-bar .logo {
-  width: 110px;
-  overflow: hidden;
-  border-radius: 5%;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 1px 5px var(--secondary-color);
 }
-.navigation-bar .logo img {
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
+.navigation-bar .logo .company-brand {
+  width: 130px;
+  height: 58px;
+  margin: auto;
+  text-align: right;
+}
+.navigation-bar .logo .company-brand .name{
+  font-size: 35px;
+  line-height: 35px;
+  margin: 0;
+  color: var(--theme-color);
+}
+.navigation-bar .logo .company-brand .sub-name{
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--secondary-color);
 }
 .navigation-bar .navbar-nav li {
   position: relative;
@@ -142,7 +157,6 @@ header .row .right {
 .navigation-bar .navbar li .active {
   color: var(--theme-color);
 }
-
 .navigation-bar .navbar li a {
   position: relative;
   display: inline-block;
@@ -292,6 +306,7 @@ header .row .right {
   display: flex;
 }
 .about-us .left p {
+  font-size: 18px;
   line-height: 30px;
 }
 .about-us .right {
@@ -339,20 +354,20 @@ header .row .right {
 /*-----------Our popular products css start-----------*/
 .our-popular-products .row .product{
   overflow: hidden;
-  margin-bottom: 20px;
-  height: auto;
   padding: 5px;
 }
-.our-popular-products .row .product:hover{
-  box-shadow: 0 2px 5px var(--secondary-color) ;
+.our-popular-products .row .product .product-title{
+  margin-bottom: 20px;
 }
 .our-popular-products .row .product .img{
   margin-bottom: 15px;
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
 }
 .our-popular-products .row .product img{
-  width: 100%;
-  object-fit:contain;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
 .our-popular-products .row .product img:hover{
@@ -368,7 +383,6 @@ header .row .right {
 /*-----------Our clients css end-----------*/
 .our-clients .row{
   padding: 20px 0;
-
 }
 .our-clients .clients-container{
   position: relative;
@@ -383,6 +397,8 @@ header .row .right {
 }
 
 .our-clients .clients-container .swiper-slide {
+  min-width: 80px;
+  max-width: 100px;
   text-align: center;
   font-size: 18px;
   background: #fff;

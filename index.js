@@ -28,8 +28,8 @@
 
 // SwiperJs js initialization for Our clients slider
   var swiper = new Swiper(".OurClientsSlider", {
-    slidesPerView: 5,
-    spaceBetween: 30,
+    slidesPerView: 4,
+    spaceBetween: 100,
     centeredSlides: false,
     pagination: {
       el: ".swiper-pagination",
